@@ -1,5 +1,14 @@
 import itertools
- 
+
+line = "-"* 85
+print line 
+print "Demonstration of an Arkadian Algorithm in Python"
+print line 
+print "Arkadian algorithms are algorithms that can reduce a sequence of 64 binary numbers,"
+print "to 21 unique outputs, matching exactly the output of the protein synthesis process."
+
+
+# Generating the 64 binary inputs, from 0 to 63.
 BinaryInput64  =["".join(a) for a in itertools.product(["0", "1"], repeat=6)]
 #print BinaryInput64
 
@@ -7,11 +16,11 @@ BinaryInput64  =["".join(a) for a in itertools.product(["0", "1"], repeat=6)]
 # NAND GATE - SIMPLE DEFINITION
 #
 # the truth table is:
-# INPUT X	INPUT Y		OUTPUT
-#	0			0			1
-#	0			1			1
-#	1			0			1
-#	1			1			0
+# INPUT X   INPUT Y   OUTPUT
+#	0	0	1
+#	0	1	1
+#	1	0	1
+#	1	1	0
 # in other words:
 # If the product of the inputs is 0, then the output is 1.
 # If the product of the inputs is 1, then the output is 0.
@@ -60,15 +69,10 @@ def arkadian(input):
 	F =  n(n(n(n(a,b),d),n(n(n(a,b),c),n(n(n(n(b,b),b),d),f))),n(b,d))
 	
 	return str(A)+str(B)+str(C)+str(D)+str(E)+str(F)
-	
+# ###########################################
 
-# Result output
-line = "-"* 85
-print line 
-print "Demonstration of an Arkadian Algorithm in Python"
-print line 
-print "Arkadian algorithms are algorithms that can reduce a sequence of 64 binary numbers,"
-print "to 21 unique outputs, matching exactly the output of the protein synthesis process."
+# ###########################################	
+
 
 # in binary view
 aminoacids = {}
