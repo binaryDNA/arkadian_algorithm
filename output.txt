@@ -1,0 +1,62 @@
+-------------------------------------------------------------------------------------
+Demonstration of an Arkadian Algorithm in Python
+-------------------------------------------------------------------------------------
+Arkadian algorithms are algorithms that can reduce a sequence of 64 binary numbers,
+to 21 unique outputs, matching exactly the output of the protein synthesis process.
+-------------------------------------------------------------------------------------
+Binary View:
+
+111000  is the output of  110000, 110010, 111000
+011111  is the output of  011100, 011101, 011110, 011111, 111100, 111110
+110001  is the output of  110001, 110011
+000000  is the output of  000000, 000010
+000001  is the output of  000001, 000011
+100100  is the output of  100100, 100101, 100110, 100111
+010111  is the output of  010100, 010101, 010110, 010111
+111010  is the output of  111010
+110111  is the output of  001001, 001011, 110100, 110101, 110110, 110111
+111111  is the output of  111101, 111111
+001110  is the output of  001110
+001100  is the output of  001100, 001101, 001111
+100000  is the output of  100000, 100010
+010001  is the output of  010001, 010011
+010000  is the output of  010000, 010010
+101110  is the output of  101100, 101101, 101110, 101111
+100001  is the output of  100001, 100011
+000100  is the output of  000100, 000101, 000110, 000111
+101011  is the output of  101000, 101001, 101010, 101011
+111011  is the output of  111001, 111011
+011011  is the output of  001000, 001010, 011000, 011001, 011010, 011011
+
+-------------------------------------------------------------------------------------
+Quaternary View:
+
+AUA  is the output of  AUA, AUC, AUU
+GCA  is the output of  GCA, GCC, GCG, GCU
+ACA  is the output of  ACA, ACC, ACG, ACU
+AAA  is the output of  AAA, AAG
+AUG  is the output of  AUG
+AAC  is the output of  AAC, AAU
+CCU  is the output of  CCA, CCC, CCG, CCU
+CUU  is the output of  CUA, CUC, CUG, CUU, UUA, UUG
+UGA  is the output of  UAA, UAG, UGA
+UGG  is the output of  UGG
+UCU  is the output of  AGC, AGU, UCA, UCC, UCG, UCU
+GGU  is the output of  GGA, GGC, GGG, GGU
+UUU  is the output of  UUC, UUU
+UGU  is the output of  UGC, UGU
+CAC  is the output of  CAC, CAU
+GUG  is the output of  GUA, GUC, GUG, GUU
+CAA  is the output of  CAA, CAG
+GAC  is the output of  GAC, GAU
+CGU  is the output of  AGA, AGG, CGA, CGC, CGG, CGU
+UAC  is the output of  UAC, UAU
+GAA  is the output of  GAA, GAG
+-------------------------------------------------------------------------------------
+
+Compare the Quaternary output of this program to the RNA Codon Table:
+http://en.wikipedia.org/wiki/RNA_codon_table#RNA_codon_table
+
+For more information on the concept of the Arkadian algorithms and the
+binary nature of our genetic code, please visit http://dna.mitsinikos.net
+-------------------------------------------------------------------------------------
